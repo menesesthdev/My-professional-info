@@ -38,7 +38,6 @@
   "workExperience": [
     {
       "company": "CAIXA Econômica Federal (via Contax)",
-      "companyUrl": "",
       "companyImage": "https://placehold.co/1366x768",
       "companyDescription": "Instituição financeira pública de grande porte, atuando com sistemas corporativos críticos.",
       "role": "Analista de Sistemas Jr — Desenvolvedor Full Stack",
@@ -60,7 +59,6 @@
     },
     {
       "company": "GSM Bahia",
-      "companyUrl": "",
       "companyImage": "https://placehold.co/1366x768",
       "companyDescription": "Empresa de suporte técnico e infraestrutura de TI.",
       "role": "Analista de Suporte Técnico de TI",
@@ -78,7 +76,6 @@
     },
     {
       "company": "Clínica de Assistência à Mulher",
-      "companyUrl": "",
       "companyImage": "https://placehold.co/1366x768",
       "companyDescription": "Clínica de saúde voltada à assistência à mulher.",
       "role": "Recepcionista / Jovem Aprendiz (TI & Administrativo)",
@@ -106,12 +103,8 @@
       "description": "Plataforma SaaS multi-tenant para franqueados operarem lavanderias self-service 100% autônomas: o cliente se identifica no totem, escolhe a máquina e inicia o ciclo, com débito automático de créditos. Back-end em Clean Architecture (Domain, Application, Infrastructure, API) com autenticação via JWT Bearer, arquitetura orientada a eventos com RabbitMQ/MassTransit para o ciclo das máquinas, e front-end React 19 feature-based com três interfaces: totem touch, painel do franqueado e área do cliente.",
       "tags": [
         ".NET 10",
-        "EF Core 10",
-        "PostgreSQL 16",
-        "RabbitMQ (MassTransit)",
         "React 19",
-        "TypeScript",
-        "Docker"
+        "RabbitMQ"
       ],
       "href": "https://github.com/menesesthdev/giro-rapido"
     },
@@ -121,10 +114,7 @@
       "tags": [
         ".NET 10",
         "ASP.NET Core MVC",
-        "EF Core",
-        "SQLite",
-        "xUnit",
-        "Docker"
+        "xUnit"
       ],
       "href": "https://github.com/menesesthdev/AzurePrep"
     }
@@ -170,8 +160,7 @@
       "title": "Microsoft Certified: Azure Fundamentals",
       "issuer": "Microsoft",
       "certificationImage": "https://placehold.co/600x600",
-      "date": "Ago 2026",
-      "href": ""
+      "date": "Ago 2026"
     }
   ],
   "blog": {
