@@ -1,9 +1,9 @@
 {
   "meta": {
-    "siteTitle": "Título da página",
-    "siteDescription": "Seu cargo / Título",
+    "siteTitle": "João Victor Meneses | Desenvolvedor Full Stack",
+    "siteDescription": "Desenvolvedor Full Stack | .NET · TypeScript · Python",
     "ogImage": "https://placehold.co/1200x630.png",
-    "favicon": "https://github.com/openportfolios.png",
+    "favicon": "https://github.com/menesesthdev.png",
     "defaultTheme": "dark",
     "scale": "small",
     "language": "pt",
@@ -11,76 +11,167 @@
     "credits": true
   },
   "person": {
-    "name": "Seu nome",
-    "title": "Seu cargo / Título",
-    "email": "seu@email.com",
-    "location": "Sua cidade, Seu país",
-    "avatar": "https://github.com/openportfolios.png",
+    "name": "João Victor Meneses dos Santos Caldas",
+    "title": "Desenvolvedor Full Stack",
+    "email": "menesesthcompany@gmail.com",
+    "location": "Salvador, Brasil",
+    "avatar": "https://imgur.com/a/MfzpOk4",
     "social": [
       {
         "label": "GitHub",
-        "href": "https://github.com/openportfolios",
+        "href": "https://github.com/menesesthdev",
         "icon": "github"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com/in/joaovdev",
+        "icon": "linkedin"
       }
     ]
   },
   "about": {
     "text": [
-      "Uma breve biografia descrevendo quem você é, o que você faz e o que te motiva profissionalmente. Esta é a sua chance de falar sobre sua trajetória, paixões e foco atual.",
-      "Você também pode usar [texto colorido]{#8D62DD} e [links](https://github.com/openportfolios/yuri){#0EA5E9} na sua biografia."
+      "Desenvolvedor Full Stack com experiência em sistemas corporativos de grande porte, atuando atualmente na CAIXA Econômica Federal. Vivência sólida no stack [.NET (C#)]{#8D62DD}, [TypeScript]{#0EA5E9}, [Angular]{#8D62DD} e SQL Server para aplicações web robustas, complementada por Python para automação e integrações.",
+      "Conhecimento em React, APIs RESTful e ferramentas como AWS e GitHub Actions. Pratica SOLID e MVC para código limpo, escalável e de fácil manutenção."
     ]
   },
   "workExperience": [
     {
-      "company": "Nome da Empresa",
-      "companyUrl": "https://www.company.com",
+      "company": "CAIXA Econômica Federal (via Contax)",
+      "companyUrl": "",
       "companyImage": "https://placehold.co/1366x768",
-      "companyDescription": "Uma breve descrição da empresa, o que ela faz e sua missão.",
-      "role": "Cargo",
-      "period": "Mês Ano - Presente",
+      "companyDescription": "Instituição financeira pública de grande porte, atuando com sistemas corporativos críticos.",
+      "role": "Analista de Sistemas Jr — Desenvolvedor Full Stack",
+      "period": "Out 2025 - Presente",
       "tags": [
-        "Remoto",
-        "Habilidade 1",
-        "Habilidade 2"
+        "Presencial",
+        ".NET (C#)",
+        "TypeScript",
+        "SQL Server",
+        "Angular",
+        "Python"
       ],
       "bullets": [
-        "Pelo que você era responsável neste emprego.",
-        "Projeto ou sistema específico que você construiu ou para o qual contribuiu.",
-        "Impacto que você teve, como melhorar o desempenho, economizar tempo ou resolver um problema.",
-        "Qualquer outra informação que você ache relevante para mostrar suas habilidades e experiência."
+        "Desenvolvimento e manutenção de sistemas corporativos de grande porte com stack .NET (C#), TypeScript e SQL Server, garantindo desempenho e confiabilidade nas integrações entre camadas.",
+        "Utilização de Python para automação de processos e integrações backend, otimizando rotinas operacionais.",
+        "Desenvolvimento de interfaces e componentes web com Angular e TypeScript, seguindo padrões de componentização e reutilização de código.",
+        "Aplicação consistente de princípios SOLID e padrão MVC, e colaboração em ambiente ágil com Git/GitLab e revisões de código."
+      ]
+    },
+    {
+      "company": "GSM Bahia",
+      "companyUrl": "",
+      "companyImage": "https://placehold.co/1366x768",
+      "companyDescription": "Empresa de suporte técnico e infraestrutura de TI.",
+      "role": "Analista de Suporte Técnico de TI",
+      "period": "Mai 2025 - Out 2025",
+      "tags": [
+        "Vila de Abrantes, BA",
+        "Suporte",
+        "Redes",
+        "Automação"
+      ],
+      "bullets": [
+        "Atendimento a chamados internos, configuração de equipamentos e manutenção de infraestrutura de rede.",
+        "Aplicação de lógica de programação na automação de processos internos."
+      ]
+    },
+    {
+      "company": "Clínica de Assistência à Mulher",
+      "companyUrl": "",
+      "companyImage": "https://placehold.co/1366x768",
+      "companyDescription": "Clínica de saúde voltada à assistência à mulher.",
+      "role": "Recepcionista / Jovem Aprendiz (TI & Administrativo)",
+      "period": "2022 - 2024",
+      "tags": [
+        "Salvador, BA",
+        "Administrativo"
+      ],
+      "bullets": [
+        "Início como Jovem Aprendiz e posterior efetivação, atuando em recepção, suporte administrativo e almoxarifado.",
+        "Base para a transição à carreira técnica."
       ]
     }
   ],
   "education": [
     {
-      "institution": "Nome da Universidade",
-      "degree": "Nome do Curso",
-      "period": "Mês Ano - Presente"
+      "institution": "Uninassau",
+      "degree": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+      "period": "2025 - Cursando"
     }
   ],
   "projects": [
     {
-      "title": "Nome do projeto",
-      "description": "O que é o projeto e o que ele faz.",
+      "title": "Giro Rápido — Plataforma SaaS para Lavanderias",
+      "description": "Plataforma SaaS multi-tenant para franqueados operarem lavanderias self-service 100% autônomas: o cliente se identifica no totem, escolhe a máquina e inicia o ciclo, com débito automático de créditos. Back-end em Clean Architecture (Domain, Application, Infrastructure, API) com autenticação via JWT Bearer, arquitetura orientada a eventos com RabbitMQ/MassTransit para o ciclo das máquinas, e front-end React 19 feature-based com três interfaces: totem touch, painel do franqueado e área do cliente.",
       "tags": [
-        "Tecnologia 1",
-        "Tecnologia 2"
+        ".NET 10",
+        "EF Core 10",
+        "PostgreSQL 16",
+        "RabbitMQ (MassTransit)",
+        "React 19",
+        "TypeScript",
+        "Docker"
       ],
-      "href": "https://github.com/openportfolios/yuri"
+      "href": "https://github.com/menesesthdev/giro-rapido"
+    },
+    {
+      "title": "AzurePrep — Simulado do exame AZ-900",
+      "description": "Simulado do exame Microsoft Azure Fundamentals que replica a experiência real de prova — timer, navegação linear, tela de revisão e score report — com banco de questões 100% autoral, escrito a partir do Skills Measured oficial. Clean Architecture com DDD leve e testes unitários (xUnit) desde a primeira etapa. Autenticação própria (sem ASP.NET Identity): cookies, OAuth/OIDC (Google, GitHub, LinkedIn) e hash PBKDF2-HMAC-SHA256. Proteção contra força bruta em duas camadas e geração de QR Code Pix no servidor, validada contra o manual do BR Code do Banco Central.",
+      "tags": [
+        ".NET 10",
+        "ASP.NET Core MVC",
+        "EF Core",
+        "SQLite",
+        "xUnit",
+        "Docker"
+      ],
+      "href": "https://github.com/menesesthdev/AzurePrep"
     }
   ],
   "skills": [
-    "Habilidade 1",
-    "Habilidade 2",
-    "Habilidade 3"
+    "C#",
+    ".NET",
+    "ASP.NET",
+    "Python",
+    "Dapper",
+    "API REST",
+    "TypeScript",
+    "Angular 17",
+    "JavaScript",
+    "React",
+    "HTML5",
+    "CSS3",
+    "Bootstrap",
+    "SQL Server",
+    "MySQL",
+    "Modelagem Relacional",
+    "Query Optimization",
+    "Scripts Python",
+    "Integração de APIs",
+    "Webhooks",
+    "Automação de Processos",
+    "CI/CD",
+    "MVC",
+    "SOLID",
+    "Clean Code",
+    "RESTful API Design",
+    "Git Flow",
+    "Git",
+    "GitHub Actions",
+    "GitLab",
+    "Azure App Services",
+    "AWS",
+    "Postman",
+    "Power BI"
   ],
   "certifications": [
     {
-      "title": "Nome da Certificação",
-      "issuer": "Nome da Instituição",
+      "title": "Microsoft Certified: Azure Fundamentals",
+      "issuer": "Microsoft",
       "certificationImage": "https://placehold.co/600x600",
-      "date": "Mês Ano",
-      "href": "https://github.com/openportfolios/yuri"
+      "date": "Ago 2026",
+      "href": ""
     }
   ],
   "blog": {
