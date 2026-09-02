@@ -1,7 +1,13 @@
+"use client";
+
 import Link from "next/link";
-import { portfolioConfig, px, uiString } from "@/lib/portfolio-config";
+import { useLanguage } from "@/components/language-provider";
+import { configForLanguage, px, uiString } from "@/lib/portfolio-config";
 
 export default function NotFound() {
+  const { language } = useLanguage();
+  const config = configForLanguage(language);
+
   return (
     <main
       style={{ maxWidth: px(1400) }}
@@ -12,9 +18,9 @@ export default function NotFound() {
           <p className="font-mono text-sm" style={{ color: "hsl(var(--muted-foreground))" }}>
             404
           </p>
-          <h1 className="text-2xl font-bold">{uiString(portfolioConfig, "notFoundTitle")}</h1>
+          <h1 className="text-2xl font-bold">{uiString(config, "notFoundTitle")}</h1>
           <p className="font-mono text-sm text-pretty" style={{ color: "hsl(var(--foreground) / 0.8)" }}>
-            {uiString(portfolioConfig, "notFoundDescription")}
+            {uiString(config, "notFoundDescription")}
           </p>
           <Link
             href="/"
@@ -34,7 +40,7 @@ export default function NotFound() {
             >
               <path d="m15 18-6-6 6-6" />
             </svg>
-            {uiString(portfolioConfig, "backHome")}
+            {uiString(config, "backHome")}
           </Link>
         </div>
       </div>

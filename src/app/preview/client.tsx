@@ -71,5 +71,7 @@ export function PreviewClient({ defaultConfig, posts }: { defaultConfig: Portfol
     setTheme(defaultTheme);
   }, [defaultTheme, setTheme]);
 
-  return <Portfolio config={config} posts={posts} />;
+  // The previewed config carries its own `meta.language`, so the runtime
+  // language toggle would have nothing to switch here.
+  return <Portfolio config={config} posts={posts} showLanguageToggle={false} />;
 }

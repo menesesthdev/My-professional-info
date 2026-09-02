@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { LanguageProvider } from "@/components/language-provider";
 import { ThemeProvider } from "@/components/theme-provider";
 import { BASE_FONT_SIZE_PX, portfolioConfig, px, resolveLanguage, resolveTheme } from "@/lib/portfolio-config";
 import "./globals.css";
@@ -12,7 +13,8 @@ const inter = Inter({
 const { siteTitle, siteDescription, ogImage } = portfolioConfig.meta;
 
 // Resolved (not read raw) so a bad value in the config file can't reach
-// next-themes or the <html lang> attribute.
+// next-themes or the <html lang> attribute. `htmlLang` is also the language
+// the page starts in; the header's language toggle takes over from there.
 const defaultTheme = resolveTheme(portfolioConfig);
 const htmlLang = resolveLanguage(portfolioConfig);
 
@@ -57,7 +59,9 @@ export default function RootLayout({
             the cards carry for their hover state also animates the theme swap,
             so they fade over 150ms while untransitioned text switches at once. */}
         <ThemeProvider attribute="class" defaultTheme={defaultTheme} disableTransitionOnChange>
-          {children}
+          <LanguageProvider defaultLanguage={htmlLang}>
+            {children}
+          </LanguageProvider>
         </ThemeProvider>
       </body>
     </html>

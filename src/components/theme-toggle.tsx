@@ -29,14 +29,3 @@ export function ThemeToggle({ buttonSize = px(32), iconSize = px(16) }: { button
     </button>
   );
 }
-
-// Pinned to the page's top-right corner, above the scrolling content. Offsets
-// scale with the config like the sizes do, so it stays clear of the page
-// padding at every scale.
-export function FloatingThemeToggle({ buttonSize = px(32), iconSize = px(16), offset = px(16) }: { buttonSize?: number; iconSize?: number; offset?: number }) {
-  return (
-    <div className="fixed z-50 print:hidden" style={{ top: offset, right: offset }}>
-      <ThemeToggle buttonSize={buttonSize} iconSize={iconSize} />
-    </div>
-  );
-}

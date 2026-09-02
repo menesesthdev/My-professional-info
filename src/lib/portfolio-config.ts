@@ -1,5 +1,6 @@
 import type { PortfolioConfigInput } from "@openportfolios/schema";
 import rawConfig from "../../portfolio.config.json";
+import rawConfigEn from "../../portfolio.config.en.json";
 
 // Config types come from the official schema package; the JSON is validated
 // against it at build time by scripts/validate-config.mjs (npm "prebuild").
@@ -70,6 +71,22 @@ export function resolveTheme(config: PortfolioConfigInput): ThemeName {
 // Sections are optional in the JSON file — omitting a key (or setting it to
 // null) is how a user removes that part of the site.
 export const portfolioConfig = rawConfig as unknown as PortfolioConfigInput;
+
+// The site ships one config file per language: portfolio.config.json is the
+// Portuguese source of truth (the only one the prebuild validates) and
+// portfolio.config.en.json is its English counterpart, carrying the same keys
+// in the same order so switching languages never reorders the page.
+export const portfolioConfigs: Record<Language, PortfolioConfigInput> = {
+  pt: rawConfig as unknown as PortfolioConfigInput,
+  en: rawConfigEn as unknown as PortfolioConfigInput,
+};
+
+// Every helper below reads its language from the config it is given
+// (`meta.language`), so picking the config here is all it takes to translate
+// the whole page — headings and chrome strings included.
+export function configForLanguage(language: Language): PortfolioConfigInput {
+  return portfolioConfigs[language] ?? portfolioConfig;
+}
 
 // Sections the user can reorder by moving their keys around in
 // portfolio.config.json. Only the header ("person") is pinned to the top.
@@ -184,7 +201,7 @@ export function sectionTitle(config: PortfolioConfigInput, key: SectionKey): str
   return SECTION_TITLES[resolveLanguage(config)][key];
 }
 
-type UIStringKey = "builtWith" | "backHome" | "notFoundTitle" | "notFoundDescription" | "footnotesLabel";
+type UIStringKey = "builtWith" | "backHome" | "notFoundTitle" | "notFoundDescription" | "footnotesLabel" | "switchLanguage";
 
 const UI_STRINGS: Record<Language, Record<UIStringKey, string>> = {
   en: {
@@ -193,6 +210,7 @@ const UI_STRINGS: Record<Language, Record<UIStringKey, string>> = {
     notFoundTitle: "Page not found",
     notFoundDescription: "The page you're looking for doesn't exist or has been moved.",
     footnotesLabel: "Footnotes",
+    switchLanguage: "Switch to Portuguese",
   },
   pt: {
     builtWith: "Feito com",
@@ -200,6 +218,7 @@ const UI_STRINGS: Record<Language, Record<UIStringKey, string>> = {
     notFoundTitle: "Página não encontrada",
     notFoundDescription: "A página que você está procurando não existe ou foi movida.",
     footnotesLabel: "Notas de rodapé",
+    switchLanguage: "Mudar para inglês",
   },
 };
 

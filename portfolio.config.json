@@ -176,9 +176,6 @@
       "date": "Ago 2026"
     }
   ],
-  "blog": {
-    "enabled": true
-  },
   "discordActivity": {
     "enabled": true,
     "userId": "Seu ID de usuário do Discord"

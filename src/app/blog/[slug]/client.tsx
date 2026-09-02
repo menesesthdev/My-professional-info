@@ -9,18 +9,21 @@ import Link from "next/link";
 import { Credits } from "@/components/credits";
 import { PersonHeader } from "@/components/person-header";
 import { Reveal } from "@/components/reveal";
-import { FloatingThemeToggle } from "@/components/theme-toggle";
+import { FloatingControls } from "@/components/floating-controls";
 import type { BlogPost } from "@/lib/blog";
-import { areAnimationsEnabled, portfolioConfig, px, uiString } from "@/lib/portfolio-config";
+import { useLanguage } from "@/components/language-provider";
+import { areAnimationsEnabled, configForLanguage, px, uiString } from "@/lib/portfolio-config";
 import remarkColorLinks from "@/lib/remark-color-links";
 
 const MAX_BLOG_TAGS = 3;
 
 export default function BlogPostClient({ post }: { post: BlogPost }) {
-  const animations = areAnimationsEnabled(portfolioConfig);
+  const { language } = useLanguage();
+  const config = configForLanguage(language);
+  const animations = areAnimationsEnabled(config);
   return (
     <>
-      <FloatingThemeToggle buttonSize={px(32)} iconSize={px(16)} offset={px(16)} />
+      <FloatingControls buttonSize={px(32)} iconSize={px(16)} offset={px(16)} />
       <main
         style={{ maxWidth: px(1400) }}
         className="relative mx-auto scroll-my-12 overflow-auto p-4 md:p-16 print:p-11"
@@ -47,7 +50,7 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
               >
                 <path d="m15 18-6-6 6-6" />
               </svg>
-              {uiString(portfolioConfig, "backHome")}
+              {uiString(config, "backHome")}
             </Link>
           </Reveal>
 
@@ -92,7 +95,7 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
             <ReactMarkdown
               remarkPlugins={[remarkGfm, remarkEmoji, remarkColorLinks]}
               rehypePlugins={[rehypeRaw, rehypeSlug]}
-              remarkRehypeOptions={{ footnoteLabel: uiString(portfolioConfig, "footnotesLabel") }}
+              remarkRehypeOptions={{ footnoteLabel: uiString(config, "footnotesLabel") }}
               components={{
                 h1: ({ children, id }) => (
                   <h1 id={id} className="text-2xl font-bold mb-4 scroll-mt-8">{children}</h1>
@@ -258,12 +261,12 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
           <hr style={{ borderColor: "hsl(var(--border))" }} />
 
           <Reveal enabled={animations}>
-            <PersonHeader config={portfolioConfig} />
+            <PersonHeader config={config} />
           </Reveal>
         </div>
 
         <Reveal className="mt-8" atPageEnd enabled={animations}>
-          <Credits config={portfolioConfig} />
+          <Credits config={config} />
         </Reveal>
       </main>
     </>

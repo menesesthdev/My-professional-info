@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "siteTitle": "João Victor Meneses | Full Stack Developer",
+    "siteDescription": "Full Stack Developer | .NET · TypeScript · Python",
+    "ogImage": "https://placehold.co/1200x630.png",
+    "favicon": "https://github.com/menesesthdev.png",
+    "defaultTheme": "dark",
+    "scale": "small",
+    "language": "en",
+    "animations": true,
+    "credits": true
+  },
+  "person": {
+    "name": "João Victor Meneses dos Santos Caldas",
+    "title": "Full Stack Developer",
+    "email": "menesesthcompany@gmail.com",
+    "location": "Salvador, Brazil",
+    "avatar": "https://i.imgur.com/IYOeNY8.jpeg",
+    "social": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/menesesthdev",
+        "icon": "github"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com/in/joaovdev",
+        "icon": "linkedin"
+      },
+      {
+        "label": "Instagram",
+        "href": "https://www.instagram.com/jotavctr/",
+        "icon": "instagram"
+      },
+      {
+        "label": "Spotify",
+        "href": "https://open.spotify.com/user/31gjortv7zqvsanxhnck3sxwi7fi",
+        "icon": "spotify"
+      }
+    ]
+  },
+  "about": {
+    "text": [
+      "Full Stack Developer with experience in large-scale enterprise systems, currently working at CAIXA Econômica Federal. Solid background in the [.NET (C#)]{#8D62DD}, [TypeScript]{#0EA5E9}, [Angular]{#8D62DD} and SQL Server stack for robust web applications, complemented by Python for automation and integrations.",
+      "Knowledge of React, RESTful APIs and tools such as AWS and GitHub Actions. Applies SOLID and MVC for clean, scalable and maintainable code."
+    ]
+  },
+  "workExperience": [
+    {
+      "company": "CAIXA Econômica Federal (via Contax)",
+      "companyUrl": "https://www.caixa.gov.br/Paginas/home-caixa.aspx",
+      "companyImage": "https://www.visiteapucarana.com.br/wp-content/uploads/2019/04/caixa_economica_federal.jpeg",
+      "companyDescription": "Large public financial institution, working with mission-critical enterprise systems.",
+      "role": "Junior Systems Analyst — Full Stack Developer",
+      "period": "Oct 2025 - Present",
+      "tags": [
+        "On-site",
+        ".NET (C#)",
+        "TypeScript",
+        "SQL Server",
+        "Angular",
+        "Python"
+      ],
+      "bullets": [
+        "Development and maintenance of large-scale enterprise systems with a .NET (C#), TypeScript and SQL Server stack, ensuring performance and reliability across layer integrations.",
+        "Use of Python for process automation and backend integrations, streamlining operational routines.",
+        "Development of web interfaces and components with Angular and TypeScript, following componentization and code reuse standards.",
+        "Consistent application of SOLID principles and the MVC pattern, and collaboration in an agile environment with Git/GitLab and code reviews."
+      ]
+    },
+    {
+      "company": "GSM Bahia",
+      "companyUrl": "https://gsmbahia.com.br",
+      "companyImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb8AjbbSAhLP7QzBxOYOodl2Uuvq5i5lyqKC-MImyRlw&s=10",
+      "companyDescription": "IT technical support and infrastructure company.",
+      "role": "IT Technical Support Analyst",
+      "period": "May 2025 - Oct 2025",
+      "tags": [
+        "Vila de Abrantes, BA",
+        "Support",
+        "Networking",
+        "Automation"
+      ],
+      "bullets": [
+        "Handling internal support tickets, configuring equipment and maintaining network infrastructure.",
+        "Applying programming logic to automate internal processes."
+      ]
+    },
+    {
+      "company": "Clínica de Assistência à Mulher",
+      "companyUrl": "https://example.com",
+      "companyImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTwGkZD4OokkhkvvGcZndUjFlOIImsCFsghigQh_4Auw&s=10",
+      "companyDescription": "Healthcare clinic focused on women's health.",
+      "role": "Receptionist / Young Apprentice (IT & Administrative)",
+      "period": "2022 - 2024",
+      "tags": [
+        "Salvador, BA",
+        "Administrative"
+      ],
+      "bullets": [
+        "Started as a Young Apprentice and was later hired full time, working in reception, administrative support and inventory.",
+        "Foundation for the transition into a technical career."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Uninassau",
+      "degree": "Associate Degree in Systems Analysis and Development",
+      "period": "2025 - In progress"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Giro Rápido — SaaS Platform for Laundromats",
+      "description": "Multi-tenant SaaS platform for franchisees to run fully self-service, unattended laundromats: the customer identifies themselves at the kiosk, picks a machine and starts the cycle, with credits debited automatically. Back-end in Clean Architecture (Domain, Application, Infrastructure, API) with JWT Bearer authentication, event-driven architecture with RabbitMQ/MassTransit for the machine cycle, and a feature-based React 19 front-end with three interfaces: touch kiosk, franchisee dashboard and customer area.",
+      "tags": [
+        ".NET 10",
+        "React 19",
+        "RabbitMQ"
+      ],
+      "href": "https://github.com/menesesthdev/giro-rapido"
+    },
+    {
+      "title": "AzurePrep — AZ-900 Exam Practice Test",
+      "description": "A Microsoft Azure Fundamentals practice exam that replicates the real test experience — timer, linear navigation, review screen and score report — with a fully original question bank written from the official Skills Measured outline. Clean Architecture with lightweight DDD and unit tests (xUnit) from day one. Custom authentication (no ASP.NET Identity): cookies, OAuth/OIDC (Google, GitHub, LinkedIn) and PBKDF2-HMAC-SHA256 hashing. Two-layer brute-force protection and server-side Pix QR Code generation, validated against the Central Bank of Brazil's BR Code manual.",
+      "tags": [
+        ".NET 10",
+        "ASP.NET Core MVC",
+        "xUnit"
+      ],
+      "href": "https://github.com/menesesthdev/AzurePrep"
+    }
+  ],
+  "skills": [
+    "C#",
+    ".NET",
+    "ASP.NET",
+    "Python",
+    "Dapper",
+    "REST API",
+    "TypeScript",
+    "Angular 17",
+    "JavaScript",
+    "React",
+    "HTML5",
+    "CSS3",
+    "Bootstrap",
+    "SQL Server",
+    "MySQL",
+    "Relational Modeling",
+    "Query Optimization",
+    "Python Scripting",
+    "API Integration",
+    "Webhooks",
+    "Process Automation",
+    "CI/CD",
+    "MVC",
+    "SOLID",
+    "Clean Code",
+    "RESTful API Design",
+    "Git Flow",
+    "Git",
+    "GitHub Actions",
+    "GitLab",
+    "Azure App Services",
+    "AWS",
+    "Postman",
+    "Power BI"
+  ],
+  "certifications": [
+    {
+      "title": "Microsoft Certified: Azure Fundamentals",
+      "issuer": "Microsoft",
+      "certificationImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGKNd-bVDvSc8lrrJ2BAcWPTt_3Mzp7aplWorcL01y_w&s=10",
+      "date": "Aug 2026"
+    }
+  ],
+  "discordActivity": {
+    "enabled": true,
+    "userId": "Seu ID de usuário do Discord"
+  }
+}

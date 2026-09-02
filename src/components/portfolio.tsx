@@ -5,7 +5,7 @@ import { DiscordActivitySection } from "@/components/discord-activity";
 import { GitHubStars } from "@/components/github-stars";
 import { PersonHeader } from "@/components/person-header";
 import { Reveal } from "@/components/reveal";
-import { FloatingThemeToggle } from "@/components/theme-toggle";
+import { FloatingControls } from "@/components/floating-controls";
 import { parseGitHubRepo } from "@/lib/github";
 import {
   areAnimationsEnabled,
@@ -339,7 +339,7 @@ function BlogSection({ config, posts }: SectionProps & { posts: PortfolioBlogPos
 // The full portfolio render tree, driven entirely by the config prop. The
 // home page feeds it the repo's portfolio.config.json; /preview feeds it live
 // configs posted by an editor.
-export function Portfolio({ config, posts = [] }: { config: PortfolioConfigInput; posts?: PortfolioBlogPost[] }) {
+export function Portfolio({ config, posts = [], showLanguageToggle = true }: { config: PortfolioConfigInput; posts?: PortfolioBlogPost[]; showLanguageToggle?: boolean }) {
   const px = makePx(config);
   const animations = areAnimationsEnabled(config);
 
@@ -362,11 +362,11 @@ export function Portfolio({ config, posts = [] }: { config: PortfolioConfigInput
 
   return (
     <>
-      <FloatingThemeToggle buttonSize={px(32)} iconSize={px(16)} offset={px(16)} />
+      <FloatingControls buttonSize={px(32)} iconSize={px(16)} offset={px(16)} showLanguageToggle={showLanguageToggle} />
       <main
         style={{ maxWidth: px(1400) }}
         // The extra top padding on small screens keeps the header clear of the
-        // fixed theme toggle, which would otherwise sit on top of the avatar.
+        // fixed control row, which would otherwise sit on top of the avatar.
         className="relative mx-auto scroll-my-12 overflow-auto px-4 pb-4 pt-14 md:p-16 print:p-11"
       >
         <div className="mx-auto w-full max-w-2xl space-y-8 print:space-y-4" style={{ backgroundColor: "hsl(var(--background))" }}>
