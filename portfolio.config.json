@@ -49,7 +49,7 @@
     {
       "company": "CAIXA Econômica Federal (via Contax)",
       "companyUrl": "https://www.caixa.gov.br/Paginas/home-caixa.aspx",
-      "companyImage": "https://placehold.co/1366x768",
+      "companyImage": "https://www.visiteapucarana.com.br/wp-content/uploads/2019/04/caixa_economica_federal.jpeg",
       "companyDescription": "Instituição financeira pública de grande porte, atuando com sistemas corporativos críticos.",
       "role": "Analista de Sistemas Jr — Desenvolvedor Full Stack",
       "period": "Out 2025 - Presente",
@@ -71,7 +71,7 @@
     {
       "company": "GSM Bahia",
       "companyUrl": "https://gsmbahia.com.br",
-      "companyImage": "https://placehold.co/1366x768",
+      "companyImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb8AjbbSAhLP7QzBxOYOodl2Uuvq5i5lyqKC-MImyRlw&s=10",
       "companyDescription": "Empresa de suporte técnico e infraestrutura de TI.",
       "role": "Analista de Suporte Técnico de TI",
       "period": "Mai 2025 - Out 2025",
@@ -89,7 +89,7 @@
     {
       "company": "Clínica de Assistência à Mulher",
       "companyUrl": "https://example.com",
-      "companyImage": "https://placehold.co/1366x768",
+      "companyImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTwGkZD4OokkhkvvGcZndUjFlOIImsCFsghigQh_4Auw&s=10",
       "companyDescription": "Clínica de saúde voltada à assistência à mulher.",
       "role": "Recepcionista / Jovem Aprendiz (TI & Administrativo)",
       "period": "2022 - 2024",
@@ -172,7 +172,7 @@
     {
       "title": "Microsoft Certified: Azure Fundamentals",
       "issuer": "Microsoft",
-      "certificationImage": "https://placehold.co/600x600",
+      "certificationImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGKNd-bVDvSc8lrrJ2BAcWPTt_3Mzp7aplWorcL01y_w&s=10",
       "date": "Ago 2026"
     }
   ],
