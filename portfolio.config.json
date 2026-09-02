@@ -38,6 +38,7 @@
   "workExperience": [
     {
       "company": "CAIXA Econômica Federal (via Contax)",
+      "companyUrl": "https://www.caixa.gov.br/Paginas/home-caixa.aspx",
       "companyImage": "https://placehold.co/1366x768",
       "companyDescription": "Instituição financeira pública de grande porte, atuando com sistemas corporativos críticos.",
       "role": "Analista de Sistemas Jr — Desenvolvedor Full Stack",
@@ -59,6 +60,7 @@
     },
     {
       "company": "GSM Bahia",
+      "companyUrl": "https://gsmbahia.com.br",
       "companyImage": "https://placehold.co/1366x768",
       "companyDescription": "Empresa de suporte técnico e infraestrutura de TI.",
       "role": "Analista de Suporte Técnico de TI",
@@ -76,6 +78,7 @@
     },
     {
       "company": "Clínica de Assistência à Mulher",
+      "companyUrl": "https://example.com",
       "companyImage": "https://placehold.co/1366x768",
       "companyDescription": "Clínica de saúde voltada à assistência à mulher.",
       "role": "Recepcionista / Jovem Aprendiz (TI & Administrativo)",
