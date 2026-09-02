@@ -26,6 +26,16 @@
         "label": "LinkedIn",
         "href": "https://linkedin.com/in/joaovdev",
         "icon": "linkedin"
+      },
+      {
+        "label": "Instagram",
+        "href": "https://www.instagram.com/jotavctr/",
+        "icon": "instagram"
+      },
+      {
+        "label": "Spotify",
+        "href": "https://open.spotify.com/user/31gjortv7zqvsanxhnck3sxwi7fi",
+        "icon": "spotify"
       }
     ]
   },
